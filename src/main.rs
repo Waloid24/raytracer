@@ -1,12 +1,12 @@
-mod rtweekend;
-mod vec3;
+mod camera;
 mod color;
-mod interval;
-mod ray;
 mod hittable;
 mod hittable_list;
+mod interval;
+mod ray;
+mod rtweekend;
 mod sphere;
-mod camera;
+mod vec3;
 
 use crate::camera::Camera;
 use crate::hittable_list::HittableList;
@@ -25,6 +25,7 @@ fn main() {
     let mut cam = Camera::default();
     cam.aspect_ratio = 16.0 / 9.0;
     cam.image_width = 400;
+    cam.samples_per_pixel = 100;
 
     cam.render(&world);
 }

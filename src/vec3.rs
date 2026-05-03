@@ -169,4 +169,3 @@ pub fn cross(u: Vec3, v: Vec3) -> Vec3 {
 pub fn unit_vector(v: &Vec3) -> Vec3 {
     *v / v.length()
 }
-

@@ -1,5 +1,5 @@
 use crate::hittable::{HitRecord, Hittable};
-use crate::rtweekend::{dot, Interval, Point3, Ray};
+use crate::rtweekend::{Interval, Point3, Ray, dot};
 
 #[derive(Clone, Copy)]
 pub struct Sphere {

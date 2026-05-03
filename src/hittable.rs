@@ -1,4 +1,4 @@
-use crate::rtweekend::{dot, Interval, Point3, Ray, Vec3};
+use crate::rtweekend::{Interval, Point3, Ray, Vec3, dot};
 
 #[derive(Clone, Copy, Default)]
 pub struct HitRecord {

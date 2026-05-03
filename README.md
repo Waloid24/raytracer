@@ -29,3 +29,9 @@ Let's add a sphere. We will use a unit vector for the normals. And the color of 
 The scene now uses a shared *hittable* interface, so objects (spheres in our case) can be tested for ray intersections in a common way. A *hittable list* stores the scene objects and keeps the closest hit, while an *interval* limits which ray hits are valid. This lets us add a second large sphere as the ground while preserving the normal-based coloring from the previous step.
 
 ![Normal-colored sphere with ground](images/image_5.png)
+
+## Part 5
+
+Now we're added antialiasing for out scene.
+
+![Antialiasing](images/image_6.png)
