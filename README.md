@@ -17,3 +17,9 @@ The original PPM output is available at [here](images/image_1.ppm) or [there](im
 Here is the scene with a new *ray* entity, a *viewport* through which the scene rays pass, a *pixel grid* on the viewport, and a *camera*, which is the point in 3D space from which all scene rays originate.
 
 ![Blue and white gradient scene](images/image_3.png)
+
+## Part 3
+
+Let's add a sphere. We will use a unit vector for the normals. And the color of a sphere now depends on a point where a hit happened.
+
+![A sphere colored according to its normal vectors](images/image_4.png)
