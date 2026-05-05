@@ -35,3 +35,9 @@ The scene now uses a shared *hittable* interface, so objects (spheres in our cas
 Now we're added antialiasing for out scene.
 
 ![Antialiasing](images/image_6.png)
+
+## Part 6
+
+Now the scene has diffuse lighting. Rays are reflected in directions following the Lambert distribution, and the camera limits the number of bounces with a maximum depth so the render always finishes. We also shift the valid hit interval slightly away from zero to avoid shadow acne, and apply gamma correction before writing the final color.
+
+![Diffuse spheres](images/image_7.png)
