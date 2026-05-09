@@ -38,6 +38,12 @@ Now we're added antialiasing for out scene.
 
 ## Part 6
 
-Now the scene has diffuse lighting. Rays are reflected in directions following the Lambert distribution, and the camera limits the number of bounces with a maximum depth so the render always finishes. We also shift the valid hit interval slightly away from zero to avoid shadow acne, and apply gamma correction before writing the final color.
+Now the scene has diffuse lighting. Rays are reflected in directions following the *Lambert distribution*, and the camera limits the number of bounces with a maximum depth so the render always finishes. We also shift the valid hit interval slightly away from zero to avoid *shadow acne*, and apply *gamma correction* before writing the final color.
 
 ![Diffuse spheres](images/image_7.png)
+
+## Part 7
+
+Now objects have *materials*. A material decides how a ray scatters after a hit, so the camera no longer hardcodes the surface behavior. We added diffuse *Lambertian* surfaces, reflective metal surfaces, and fuzziness for rougher metal reflections.
+
+![Metal and diffuse spheres](images/image_8.png)

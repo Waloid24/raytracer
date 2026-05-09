@@ -18,4 +18,4 @@ pub fn random_double_range(min: f64, max: f64) -> f64 {
 pub use crate::color::Color;
 pub use crate::interval::Interval;
 pub use crate::ray::Ray;
-pub use crate::vec3::{Point3, Vec3, dot, random_unit_vector, unit_vector};
+pub use crate::vec3::{Point3, Vec3, dot, random_unit_vector, reflect, unit_vector};

@@ -1,9 +1,13 @@
+use std::rc::Rc;
+
+use crate::material::Material;
 use crate::rtweekend::{Interval, Point3, Ray, Vec3, dot};
 
-#[derive(Clone, Copy, Default)]
+#[derive(Clone, Default)]
 pub struct HitRecord {
     pub p: Point3,
     pub normal: Vec3,
+    pub mat: Option<Rc<dyn Material>>,
     pub t: f64,
     pub front_face: bool,
 }
